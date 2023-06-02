@@ -1,5 +1,4 @@
 @import url(https://www.cssfontstack.com/);
-@import url(https://www.cssfontstack.com/Papyrus);
 #background{
     height: 725px;
     background-color: rgb(170, 160, 160);
@@ -66,7 +65,7 @@ footer{
     align-items: center;
 }
 .home-title{
-    font-family: Papyrus, fantasy;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
     margin-top: 10PX;
 }
@@ -76,7 +75,7 @@ h4{
 .msg h2{
     color: #4572b5;
     text-align: center;
-    font-family: "Papyrus", fantasy;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .msg p{
     color: #4572b5;
