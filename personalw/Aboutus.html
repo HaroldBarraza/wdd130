@@ -1,380 +1,84 @@
-@import url('https://fonts.cdnfonts.com/css/gill-sans-2');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-
-body {
-    background-color: #000000;
-    color: #0341c5;
-    font-family: 'Inconsolata', monospace;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #0341c5;
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: 150px auto;
-}
-
-nav a {
-    text-align: center;
-    color: #ffba08;
-    text-decoration: none;
-    padding: 35px;
-    font-family: 'Inconsolata', monospace;
-}
-
-nav a:hover {
-    background-color: #000000;
-    color: #0341c5;
-}
-
-.book:hover,
-.join:hover {
-    background-color: #000000;
-    color: #ffba08;
-}
-
-footer {
-    background-color: #0341c5;
-    color: #ffffff;
-    padding: 25px 50px;
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Inconsolata', monospace;
-}
-
-footer a {
-    color: #ffba08;
-    text-align: center;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #000000;
-}
-
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-
-.logo {
-    width: 200px;
-    margin-left: 100px;
-}
-
-.footer p a:hover {
-    font-size: 1.2em;
-    text-decoration: none;
-    text-decoration: underline;
-}
-
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Gill Sans', sans-serif;
-}
-
-main section {
-    text-align: center;
-}
-
-#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-
-footer .social img {
-    padding-top: 15px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    #background {
-        display: none;
-    }
-    .graphic,
-    .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-}
-
-.card-img {
-    width: 200px;
-}
-
-.card-img h2 {
-    grid-column: 3/4;
-}
-
-.aboutus {
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 1/7;
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 90px;
-}
-
-.aboutus h2:nth-of-type(1) {
-    font-size: 20px;
-    grid-column: 3/4;
-    text-align: left;
-}
-
-.backgroundhero {
-    grid-column: 1/6;
-    grid-row: 1/7;
-    background: #0004ff;
-    opacity: 0.1;
-    height: 100%;
-    width: 100%;
-}
-
-.aboutus h2:nth-of-type(2) {
-    grid-column: 3/4;
-    text-align: left;
-    font-size: 25px;
-}
-
-.aboutus h1 {
-    grid-column: 3/4;
-    text-align: left;
-    font-size: 90px;
-    margin-top: 1px;
-}
-
-.aboutus h3 {
-    grid-column: 3/4;
-    font-size: 15px;
-    text-align: left;
-}
-
-.mid {
-    display: grid;
-}
-
-#hero {
-    display: grid;
-    position: relative;
-    background-image: url(images/572023.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -1;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
-}
-
-.imagescreative {
-    display: grid;
-    grid-template-columns: 2% 20% 5% 20% 1% 1fr 2%;
-    background-color: #ffba08;
-    grid-template-rows: 2% 15% 1fr 1fr 2%;
-}
-
-.cpu {
-    width: 100%;
-    height: 100%;
-    grid-column: 6/6;
-    grid-row: 2/5;
-}
-
-.imagescreative h2 {
-    grid-column: 2/5;
-    text-align: center;
-    font-size: 40px;
-}
-
-.members {
-    grid-column: 2/2;
-    background-color: #0341c5;
-    border-radius: 35px;
-    grid-row: 3/3;
-}
-
-.established {
-    grid-column: 4/4;
-    background-color: #0341c5;
-    border-radius: 35px;
-    grid-row: 3/3;
-}
-
-.clients {
-    grid-column: 2/5;
-    background-color: #0341c5;
-    border-radius: 35px;
-    margin-top: 10px;
-    grid-row: 4/4;
-}
-
-.members h2,
-.established h2,
-.clients h2 {
-    font-size: 70px;
-    text-align: center;
-    color: #ffba08;
-}
-
-.members h3,
-.established h3,
-.clients h3 {
-    font-size: 25px;
-    text-align: center;
-    color: #ffba08;
-}
-
-.members h3 {
-    margin-top: -65px;
-}
-
-.established h2 {
-    margin-top: 0px;
-}
-
-.established h3 {
-    margin-top: 54px;
-    margin-bottom: -14px;
-}
-
-.clients h3 {
-    margin-top: -7px;
-    margin-bottom: 33px;
-}
-
-.clients h2 {
-    margin-bottom: 0px;
-    margin-top: 28;
-}
-
-.Join {
-    display: grid;
-    grid-template-columns: 15% 1fr 20% 1fr 15%;
-    margin-top: 70px;
-}
-
-.Join h2:nth-of-type(1) {
-    grid-column: 2/5;
-    text-align: center;
-    font-size: 44px;
-    grid-row: 1/1;
-    position: relative;
-    z-index: 4;
-    color: #ffba08;
-}
-.Join h2:nth-of-type(2) {
-    position: relative;
-    z-index: 3;
-    grid-column: 2/5;
-    text-align: center;
-    font-size: 44px;
-    grid-row: 2/2;
-    color: #ffba08;
-}
-
-.work {
-    grid-column: 1/6;
-    width: 100%;
-    height: 100%;
-    grid-row: 1/5;
-    position: relative;
-    z-index: -1;
-}
-
-.button-box {
-    display: grid;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    grid-column: 3/3;
-    grid-row: 3/3;
-    color: #000000;
-    text-align: center;
-    font-size: 14px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-
-.back {
-    position: relative;
-    background-color: #0341c5;
-    opacity: 0.5;
-    grid-column: 1/6;
-    width: 100%;
-    height: 100%;
-    grid-row: 1/5;
-    z-index: 1;
-}
-
-.explore:hover {
-    background: #000000;
-    color: #ffba08;
-    border-radius: 15px;
-}
-
-.explore {
-    background-color: #ffba08;
-    color: #0341c5;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-
-.infomation h2 {
-    font-size: 20px;
-    text-align: left;
-    margin-left: -70px;
-    font-family: 'Inconsolata', monospace;
-    color: #ffba08;
-}
-
-.infomation h4 {
-    font-size: 10px;
-    text-align: left;
-    margin-left: -70px;
-    margin-top: 30px;
-    font-family: 'Inconsolata', monospace;
-    color: #ffba08;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Logo2.png">
+    <title>Master Designer</title>
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Logo1.png" alt="Master Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Creative.html">Creative Work</a>
+                <a href="Aboutus.html">About us</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div class="backgroundhero"></div>
+            <section class="aboutus">
+                <h2>About</h2>
+                <h2>This is</h2>
+                <h1>Master Designer</h1>
+                <h3>We at Maestro Diseñador are a company that seeks to innovate, specializing in offering tailored solutions to our clients' brands.</h3>
+                <h3>Our thinking is geared towards finding cost-effective solutions that not only connect our brands and consumers with purpose but also bring out the best in creative ways.</h3>
+                <h3>If you can imagine it, we can make it happen. Our commitment to our clients is to provide them with quality service, meeting their demands and creating the exact logo they desire.</h3>
+                <h3>Like a needle in a haystack, our attention to detail, quality, agility, and competitive pricing, all focused on the client, make us unique. We are the solution for those with ambition and passion for great work.</h3>
+            </section>
+        </div>
+        <section class="imagescreative">
+            <div class="background"></div>
+            <h2>Quick Facts</h2>
+            <img class="cpu" src="images/5720231.jpg" alt="mobil">
+            <div class="members">
+                <h2>+32</h2>
+                <h3>Team Members</h3>
+            </div>
+            <div class="established">
+                <h3>Established in</h3>
+                <h2>2014</h2>
+            </div>
+            <div class="clients">
+                <h2>+25</h2>
+                <h3>Satisfied Clients</h3>
+            </div>
+        </section>
+        <section class="Join">
+            <div class="back"></div>
+            <img class="work" src="images/Page22.png" alt="glucerna">
+            <h2>Join Our Team</h2>
+            <h2>It takes the world's best talent to change the game.</h2>
+            <div class="button-box">
+                <a class="explore" href="#">Explore Opportunities</a>
+            </div>
+        </section>
+        <footer>
+            <div class="infomation">
+                <h2>Contact</h2>
+                <h2>Master.Designer@gmail.com</h2>
+                <h4>© 2023 by Master Designer.</h4>
+            </div>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="Aboutus.html">About us</a></p>
+            <p><a href="Creative.html">Creative Work</a></p>
+            <div class="social">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook(1).png" alt="Facebook icon">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="images/twitter(1).png" alt="Twitter icon">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram(1).png" alt="Instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
