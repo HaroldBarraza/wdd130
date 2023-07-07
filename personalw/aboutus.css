@@ -146,7 +146,7 @@ nav {
     grid-column: 3/4;
 }
 
-.AboutUs {
+.aboutus {
     display: grid;
     grid-column: 3/4;
     grid-row: 1/7;
@@ -155,7 +155,7 @@ nav {
     margin-bottom: 90px;
 }
 
-.AboutUs h2:nth-of-type(1) {
+.aboutus h2:nth-of-type(1) {
     font-size: 20px;
     grid-column: 3/4;
     text-align: left;
@@ -170,20 +170,20 @@ nav {
     width: 100%;
 }
 
-.AboutUs h2:nth-of-type(2) {
+.aboutus h2:nth-of-type(2) {
     grid-column: 3/4;
     text-align: left;
     font-size: 25px;
 }
 
-.AboutUs h1 {
+.aboutus h1 {
     grid-column: 3/4;
     text-align: left;
     font-size: 90px;
     margin-top: 1px;
 }
 
-.AboutUs h3 {
+.aboutus h3 {
     grid-column: 3/4;
     font-size: 15px;
     text-align: left;
