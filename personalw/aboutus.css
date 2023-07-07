@@ -1,100 +1,103 @@
-@import url(https://www.cssfontstack.com/);
-#background {
-    height: 725px;
-    background-color: #ffba08;
-    color: rgb(0, 17, 255);
-    grid-column: 1/11;
-    grid-row: 1/8;
-}
+@import url('https://fonts.cdnfonts.com/css/gill-sans-2');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
 body {
-    background-color: #000000; 
+    background-color: #000000;
     color: #0341c5;
-    display: block;
-    font-family: Consolas, monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color:#0341c5;
-    color: rgb(255, 255, 255);
+    background-color: #0341c5;
+    color: #ffffff;
     display: grid;
     grid-template-columns: 150px auto;
-    font-family: Consolas, monospace;
 }
-nav a{
+
+nav a {
     text-align: center;
-    color: black;
+    color: #ffba08;
     text-decoration: none;
     padding: 35px;
+    font-family: 'Inconsolata', monospace;
 }
+
 nav a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: #0341c5;
+}
+
+.book:hover,
+.join:hover {
+    background-color: #000000;
     color: #ffba08;
 }
-.book:hover, .join:hover{
-    background-color: rgb(0, 0, 0);
-    color: #FFBA08;
-}
+
 footer {
     background-color: #0341c5;
     color: #ffffff;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Consolas, monospace;
+    font-family: 'Inconsolata', monospace;
 }
 
-.home-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-footer a{
-    color: #000000;
+footer a {
+    color: #ffba08;
     text-align: center;
     text-decoration: none;
 }
-footer a:hover{
-    color: #ffba08;
+
+footer a:hover {
+    color: #000000;
 }
-.icon{
+
+.icon {
     width: 80px;
     padding-top: 10px;
 }
-.logo{
+
+.logo {
     width: 200px;
     margin-left: 100px;
 }
-.footer p a:hover{
+
+.footer p a:hover {
     font-size: 1.2em;
-    text-decoration:none ;
-    text-decoration: underline
+    text-decoration: none;
+    text-decoration: underline;
 }
-#content{
+
+#content {
     max-width: 1600px;
     margin: 0 auto;
     font-family: 'Gill Sans', sans-serif;
 }
-main section{
+
+main section {
     text-align: center;
 }
-#logo_link{
+
+#logo_link {
     padding-top: 5px;
-    justify-self:center;
+    justify-self: center;
     align-self: center;
 }
-footer .social img{
+
+footer .social img {
     padding-top: 15px;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -121,14 +124,11 @@ nav{
         font-size: 25px;
         color: #6f7364;
     }
-    .mobil-card, .glucerna-card, .Mitsubishi-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
     #background {
         display: none;
     }
-    .graphic, .msg {
+    .graphic,
+    .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -137,143 +137,161 @@ nav{
         margin-top: 25px;
     }
 }
-/**/
-.card-img{
+
+.card-img {
     width: 200px;
 }
 
-.card-img h1{
+.card-img h2 {
     grid-column: 3/4;
 }
-.AboutUs{
+
+.AboutUs {
     display: grid;
     grid-column: 3/4;
     grid-row: 1/7;
     color: #ffffff;
     font-size: 20px;
-
-
+    margin-bottom: 90px;
 }
-.AboutUs h1:nth-of-type(1){
-    font-size: 18px;
+
+.AboutUs h2:nth-of-type(1) {
+    font-size: 20px;
     grid-column: 3/4;
     text-align: left;
 }
-.backgroundhero{
+
+.backgroundhero {
     grid-column: 1/6;
     grid-row: 1/7;
     background: #0004ff;
-    opacity: .1;
+    opacity: 0.1;
     height: 100%;
     width: 100%;
 }
-.AboutUs h1:nth-of-type(2){
-    grid-column: 3/4;
-    text-align: left;
-    font-size: 21px;
 
-}
-.AboutUs h1:nth-of-type(3){
+.AboutUs h2:nth-of-type(2) {
     grid-column: 3/4;
     text-align: left;
-    font-size: 44px;
+    font-size: 25px;
+}
+
+.AboutUs h1 {
+    grid-column: 3/4;
+    text-align: left;
+    font-size: 90px;
     margin-top: 1px;
-
 }
-.AboutUs h2{
+
+.AboutUs h3 {
     grid-column: 3/4;
     font-size: 15px;
     text-align: left;
-
 }
-.mid{
+
+.mid {
     display: grid;
 }
-#hero{
+
+#hero {
     display: grid;
     position: relative;
-    background-image: url(images/572023.jpg);   
+    background-image: url(images/572023.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
     z-index: -1;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
-.imagescreative{
+
+.imagescreative {
     display: grid;
     grid-template-columns: 2% 20% 5% 20% 1% 1fr 2%;
     background-color: #ffba08;
     grid-template-rows: 2% 15% 1fr 1fr 2%;
 }
-.cpu{
+
+.cpu {
     width: 100%;
     height: 100%;
     grid-column: 6/6;
     grid-row: 2/5;
 }
-.imagescreative h2{
-    grid-column: 2/4;
+
+.imagescreative h2 {
+    grid-column: 2/5;
     text-align: center;
     font-size: 40px;
 }
-.members{
+
+.members {
     grid-column: 2/2;
     background-color: #0341c5;
     border-radius: 35px;
     grid-row: 3/3;
 }
-.established{
+
+.established {
     grid-column: 4/4;
     background-color: #0341c5;
     border-radius: 35px;
     grid-row: 3/3;
 }
-.clients{
+
+.clients {
     grid-column: 2/5;
     background-color: #0341c5;
     border-radius: 35px;
     margin-top: 10px;
     grid-row: 4/4;
 }
-.members h2, .established h2, .clients h2{
+
+.members h2,
+.established h2,
+.clients h2 {
     font-size: 70px;
     text-align: center;
-    color: #FFBA08;
-
+    color: #ffba08;
 }
-.members h1, .established h1, .clients h1{
-    font-size: 14px;
+
+.members h3,
+.established h3,
+.clients h3 {
+    font-size: 25px;
     text-align: center;
-    color: #FFBA08;
+    color: #ffba08;
 }
-.members h1{
+
+.members h3 {
     margin-top: -65px;
-
 }
-.established h2{
+
+.established h2 {
     margin-top: 0px;
-
 }
-.established h1{
+
+.established h3 {
     margin-top: 54px;
     margin-bottom: -14px;
-
 }
-.clients h1{
+
+.clients h3 {
     margin-top: -7px;
     margin-bottom: 33px;
-
 }
-.clients h2{
+
+.clients h2 {
     margin-bottom: 0px;
     margin-top: 28;
-
 }
-.Join{
+
+.Join {
     display: grid;
     grid-template-columns: 15% 1fr 20% 1fr 15%;
+    margin-top: 70px;
 }
-.Join h2:nth-of-type(1){
+
+.Join h2:nth-of-type(1) {
     grid-column: 2/5;
     text-align: center;
     font-size: 44px;
@@ -282,7 +300,7 @@ nav{
     z-index: 4;
     color: #ffba08;
 }
-.Join h2:nth-of-type(2){
+.Join h2:nth-of-type(2) {
     position: relative;
     z-index: 3;
     grid-column: 2/5;
@@ -291,45 +309,50 @@ nav{
     grid-row: 2/2;
     color: #ffba08;
 }
-.work{
-    grid-column: 1/6;   
+
+.work {
+    grid-column: 1/6;
     width: 100%;
     height: 100%;
     grid-row: 1/5;
     position: relative;
     z-index: -1;
 }
-.button-box{
+
+.button-box {
     display: grid;
     position: relative;
     z-index: 2;
     text-align: center;
     grid-column: 3/3;
     grid-row: 3/3;
-    color: rgb(0, 0, 0);
+    color: #000000;
     text-align: center;
     font-size: 14px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 15px;
 }
-.back{
+
+.back {
     position: relative;
     background-color: #0341c5;
-    opacity: .5;
-    grid-column: 1/6;   
+    opacity: 0.5;
+    grid-column: 1/6;
     width: 100%;
     height: 100%;
     grid-row: 1/5;
     z-index: 1;
 }
-.explore:hover{
-    background: rgb(0, 0, 0);
-    color: #FFBA08;
+
+.explore:hover {
+    background: #000000;
+    color: #ffba08;
     border-radius: 15px;
 }
-.explore{
-    background-color: #FFBA08;
+
+.explore {
+    background-color: #ffba08;
     color: #0341c5;
     text-align: center;
     text-decoration: none;
@@ -338,19 +361,20 @@ nav{
     margin-top: 50px;
     border-radius: 15px;
 }
+
 .infomation h2 {
     font-size: 20px;
     text-align: left;
     margin-left: -70px;
-    font-family: Consolas, monospace;
-    color: #000000;
-
+    font-family: 'Inconsolata', monospace;
+    color: #ffba08;
 }
-.infomation h3 {
+
+.infomation h4 {
     font-size: 10px;
     text-align: left;
     margin-left: -70px;
     margin-top: 30px;
-    font-family: Consolas, monospace;
-    color: #000000;
+    font-family: 'Inconsolata', monospace;
+    color: #ffba08;
 }
