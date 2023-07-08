@@ -152,15 +152,10 @@ nav {
     grid-row: 1/7;
     color: #ffffff;
     font-size: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+    width: 100%;
+    margin-top: 50px;
 }
-
-.aboutus h2:nth-of-type(1) {
-    font-size: 20px;
-    grid-column: 3/4;
-    text-align: left;
-}
-
 .backgroundhero {
     grid-column: 1/6;
     grid-row: 1/7;
@@ -170,12 +165,6 @@ nav {
     width: 100%;
 }
 
-.aboutus h2:nth-of-type(2) {
-    grid-column: 3/4;
-    text-align: left;
-    font-size: 25px;
-}
-
 .aboutus h1 {
     grid-column: 3/4;
     text-align: left;
@@ -183,9 +172,9 @@ nav {
     margin-top: 1px;
 }
 
-.aboutus h3 {
+.aboutus p {
     grid-column: 3/4;
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
 }
 
