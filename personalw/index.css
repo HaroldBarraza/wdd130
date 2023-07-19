@@ -8,30 +8,17 @@
     grid-row: 1/8;
 }
 
-body {
-    background-color: #000000; 
-    color: #0341c5;
-    display: block;
-    font-family: Consolas, monospace;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color:#0341c5;
-    color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: 150px auto;
-}
-nav a{
+nav a {
     text-align: center;
-    color: black;
+    color: #ffba08;
     text-decoration: none;
     padding: 35px;
+    font-family: 'Inconsolata', monospace;
 }
+
 nav a:hover {
-    background-color: rgb(0, 0, 0);
-    color: #ffba08;
+    background-color: #000000;
+    color: #0341c5;
 }
 .book, .join{
     background-color: rgb(0, 255, 255);
@@ -55,15 +42,6 @@ nav a:hover {
     grid-column: 6/10;
     grid-row: 3/6;
     box-shadow: 5px 5px 10px #6f7364;
-}
-footer{
-    background-color: #0341c5;
-    color: #ffffff;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 .home-title{
     font-family: 'Gill Sans', sans-serif;
@@ -89,30 +67,12 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-footer a{
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-}
-footer a:hover{
-    color: #ffba08;
-}
-.icon{
-    width: 80px;
-    padding-top: 10px;
-}
-.logo{
-    width: 200px;
-    margin-left: 100px;
-}
-.footer p a:hover{
-    font-size: 1.2em;
-    text-decoration:none ;
-    text-decoration: underline
-}
-#content{
+
+
+#content {
     max-width: 1600px;
     margin: 0 auto;
+    font-family: 'Gill Sans', sans-serif;
 }
 #hero-msg h1{
     text-align: center;
@@ -142,16 +102,10 @@ main section{
 #hero-img{
     width: 100%;
 }
-h2{
-    margin: 0;
-}
 #logo_link{
     padding-top: 5px;
     justify-self:center;
     align-self: center;
-}
-footer .social img{
-    padding-top: 15px;
 }
 .mobil-card, .glucerna-card, .Mitsubishi-card{
     margin: 50px 0;
@@ -305,21 +259,93 @@ nav{
     font-size: 20px;
     text-align: left;
     margin-left: -70px;
-    font-family: Consolas, monospace;
+    font-family: 'Inconsolata', monospace;
     color: #000000;
 }
-.infomation h2{
+.infomation h2 {
     font-size: 20px;
     text-align: left;
     margin-left: -70px;
-    font-family: Consolas, monospace;
-    color: #000000;
+    font-family: 'Inconsolata', monospace;
+    color: #ffba08;
 }
-.infomation h3{
+
+.infomation h3 {
     font-size: 10px;
     text-align: left;
     margin-left: -70px;
     margin-top: 30px;
-    font-family: Consolas, monospace;
+    font-family: 'Inconsolata', monospace;
+    color: #ffba08;
+}
+
+   
+
+
+
+
+body {
+    background-color: #000000;
+    color: #0341c5;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0341c5;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav a {
+    text-align: center;
+    color: #ffba08;
+    text-decoration: none;
+    padding: 35px;
+    font-family: 'Inconsolata', monospace;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #0341c5;
+}
+
+footer {
+    background-color: #0341c5;
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+footer a {
+    color: #ffba08;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
     color: #000000;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.footer p a:hover {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-decoration: underline;
 }
